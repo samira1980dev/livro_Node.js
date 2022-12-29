@@ -22,15 +22,15 @@ leitura.question('Digite um valor: ', (valor) => {
             console.log(num * 10**3 + ' G');
             console.log(num * 10**6 + ' T');
         } else if (pref === 'G') {
-            var num = parseInt(valor) * 10**9;
-            console.log(num * 10**-6 + ' k');
-            console.log(num * 10**-3 + ' M');
-            console.log(num * 10**3 + ' T');
+            var num = parseInt(valor) * (10**9);
+            console.log(num * 10**3 + ' k');
+            console.log(num * 10**-6 + ' M');
+            console.log(num * 10**-12 + ' T');
         } else if (pref === 'T') {
             var num = parseInt(valor) * 10**12;
             console.log(num * 10**-3 + ' k');
-            console.log(num * 10**3 + ' G');
-            console.log(num * 10**6 + ' M');
+            console.log(num * 10**-9 + ' G');
+            console.log(num * 10**-6 + ' M');
         }
         leitura.close();
     })
