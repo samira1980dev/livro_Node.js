@@ -6,9 +6,12 @@ const leitura = readline.createInterface({
 });
 
 leitura.question('Digite o número: ', (num) => {
-    for (fat = 1; fat >= num; fat++){
-        fat *= fat;
+    let resultado = num;
+    for (i = 1; i < num; i++){
+        resultado *= i;
+        
     };
-    console.log(fat);
+    console.log(resultado);
+    
     leitura.close();
 });
